@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>伪元素选择器</title>
+        <style>
+            /*第一个字*/
+            div::first-letter {
+                color: red;
+                font-size: 20px;
+            }
+
+            /*第一行文字*/
+            div::first-line {
+                background-color: yellow;
+            }
+
+            /*选中的文字*/
+            div::selection {
+                color: purple;
+                background-color: beige;
+            }
+
+            /*输入框中提示文字*/
+            input::placeholder {
+                color: gray;
+            }
+
+            /*段落前加xxx*/
+            p::before {
+                content: "$";
+            }
+
+            /*段落后加xxx*/
+            p::after {
+                content: ".00";
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <label>
+            <input type="text" placeholder="请输入您的用户名">
+        </label>
+        <div>Lorem ipsum dolor sit amet.</div>
+
+        <p>199</p>
+        <p>299</p>
+        <p>399</p>
+        <p>499</p>
+    </body>
+</html>

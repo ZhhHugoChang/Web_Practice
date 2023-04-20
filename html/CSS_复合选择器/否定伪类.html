@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            div p:not(:first-child) {
+                color: aqua
+            }
+
+            a, p {
+                font: 14px/80px "Microsoft YaHei UI";
+                color: blue;
+                text-decoration: none;
+            }
+
+            a:hover {
+                background-color: black;
+            }
+
+            div p:first-child {
+                display: block;
+                height: 50px;
+                width: 50px;
+                background-color: red;
+            }
+
+            div p:not(.close) {
+                display: block;
+                height: 20px;
+                width: 180px;
+                background-color: green;
+            }
+
+            .close {
+                font-size: 16px;
+            }
+
+            div p:not([class=南京]) {
+                display: block;
+                height: 20px;
+                width: 180px;
+                background-color: purple;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="#">这些将军澳隧道</a>
+            <p class="close">南京埃斯顿经济</p>
+            <p class="close">南京埃斯顿经济</p>
+            <p class="close">南京埃斯顿经济</p>
+            <p>啊实打实</p>
+            <p>阿萨大打算萨大</p>
+            <p>阿萨大萨大是</p>
+        </div>
+    </body>
+</html>
